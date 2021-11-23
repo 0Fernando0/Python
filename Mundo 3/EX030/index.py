@@ -1,0 +1,2 @@
+lista = {}
+def notas(*n):
