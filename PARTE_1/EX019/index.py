@@ -1,8 +1,12 @@
+'''
+script que seleciona um aluno para apresentação
+'''
+
+
 import random
-a1 = input('primeiro aluno: ')
-a2 = input('segundo aluno: ')
-a3 = input('terceira aluno: ')
-a4 = input('quarto aluno: ')
-lista = [a1,a2,a3,a4]
+lista = []
+for c in range(4):
+    lista.append(input(f'nome do {c+1}º aluno: '))
+
 escolhido = random.choice(lista)
-print('o aluno escolhido foi {}'.format(escolhido))
+print(f'o aluno escolhido foi {escolhido}')

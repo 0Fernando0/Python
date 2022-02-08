@@ -1,8 +1,12 @@
+'''
+script que seleciona a ordem de apresentação dos alunos
+'''
+
 import random
-a1 = input('primeiro aluno: ')
-a2 = input('segundo aluno: ')
-a3 = input('terceiro aluno: ')
-a4 = input('quarto aluno: ')
-lista = [a1,a2,a3,a4]
+
+lista = []
+for c in range(4):
+    lista.append(input(f'nome do {c+1}º aluno: '))
+
 random.shuffle(lista)
-print('a ordem de apresentação será \n{}'.format(lista))
+print(f'a ordem de apresentação será \n{lista}')

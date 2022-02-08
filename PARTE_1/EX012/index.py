@@ -1,7 +1,13 @@
-num = float(input('preço do produto: '))
-num2 = float(input('porcentagem de desconto: '))
-n1 = (num / 100) * num2
-n2 = num - n1
-print('o produto custa {:.2f}'.format(num))
-print('o valor do desconto é {:.2f}'.format(n1))
-print('o produto custará {:.2f}'.format(n2))
+'''
+script reduz o valor do um produto com base no desconto(%)
+'''
+
+produto = float(input('preço do produto: '))
+
+desconto = float(input('porcentagem de desconto: '))
+
+novo_preço = produto - ((produto / 100) * desconto)
+
+print(f'o produto custa {produto:.2f}')
+print(f'o valor do desconto é {desconto:.2f}')
+print(f'o produto custará {novo_preço:.2f}')

@@ -1,3 +1,10 @@
+'''
+script que acrescenta
+10% se o salario for maior que R$1250,00
+15% se o salario for menor que R$1250,00
+'''
+
+
 salario = float(input('Qual o seu salario? R$'))
 a1 = (((salario/100) * 10) + salario)
 a2 = (((salario/100) * 15) + salario)

@@ -1,3 +1,7 @@
+'''
+script que analisa o número e aprensenta a unidade,dezena,centena e milhar
+'''
+
 num = int(input('digite um número: '))
 u = num // 1 % 10
 d = num // 10 % 10

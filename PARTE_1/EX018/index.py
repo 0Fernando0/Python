@@ -1,8 +1,14 @@
-import math
+'''
+script que mostra o seno,consseno e tangente de um angulo
+'''
+
+from math import sin,cos,tan,radians
+
 angulo = float(input('digite o angulo que você deseja: '))
-seno = math.sin(math.radians(angulo))
-coss = math.cos(math.radians(angulo))
-tang = math.tan(math.radians(angulo))
-print('o angulo {} tem o seno de {:.2f}'.format(angulo,seno))
-print('o angulo {} tem o cosseno de {:.2f}'.format(angulo,coss))
-print('o angulo {} tem o tangente de {:.2f}'.format(angulo,tang))
+seno = sin(radians(angulo))
+coss = cos(radians(angulo))
+tang = tan(radians(angulo))
+
+print(f'o angulo {angulo} tem o seno de {seno:.2f}')
+print(f'o angulo {angulo} tem o cosseno de {coss:.2f}')
+print(f'o angulo {angulo} tem o tangente de {tang:.2f}')
