@@ -4,11 +4,12 @@ script que acrescenta
 15% se o salario for menor que R$1250,00
 '''
 
-
 salario = float(input('Qual o seu salario? R$'))
-a1 = (((salario/100) * 10) + salario)
-a2 = (((salario/100) * 15) + salario)
+
+aumento_1 = ((salario/100) * 10) + salario
+aumento_2 = ((salario/100) * 15) + salario
+
 if salario > 1250:
-    print('com seu aumento de 10% você vai receber R${:.2f}'.format(a1))
+    print(f'com seu aumento de 10% você vai receber R${aumento_1:.2f}')
 else:
-    print('com seu aumento de 15% você vai receber R${:.2f}'.format(a2))
+    print(f'com seu aumento de 15% você vai receber R${aumento_2:.2f}')
