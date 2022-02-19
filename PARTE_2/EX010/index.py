@@ -4,12 +4,15 @@ itens = ('PEDRA','PAPEL','TESOURA')
 print('-=-'*10)
 print('JOGO DO PEDRA,PAPEL E TESOURA!')
 print('-=-'*10)
-print('''suas opções
+
+jogador = int(input('''
+suas opções
 [ 0 ] PEDRA
 [ 1 ] PAPEL
-[ 2 ] TESOURA ''')
+[ 2 ] TESOURA
+Sua Jogada: '''))
 computador = random.randint(0,2)
-jogador = int(input('Sua Jogada: '))
+
 if computador == 2:
     if jogador == 0:
         print('JO')

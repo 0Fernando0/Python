@@ -19,7 +19,7 @@ while True:
         print('PROGRAMA ENCERRADO...')
         break
     elif opcao == 'S':
-        reversed
+        continue
     else:
         print('[ERRO]')
         break

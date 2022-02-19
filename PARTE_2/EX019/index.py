@@ -1,3 +1,4 @@
+
 for c in range (1,6):
     peso = float(input('peso {}° :'.format(c)))
     if c == 1:
@@ -8,5 +9,6 @@ for c in range (1,6):
             maior = peso
         if peso < menor:
             menor = peso
+
 print('o maior é {}'.format(maior))
 print('o menor é {}'.format(menor))

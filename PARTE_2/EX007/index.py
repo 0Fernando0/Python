@@ -1,11 +1,20 @@
-a1 = float(input('digite o primeiro angulo: '))
-a2 = float(input('digite o segundo angulo: '))
-a3 = float(input('digite o terceiro angulo: '))
-if a1 + a2 > a3 and a3 + a1 > a2 and a3 + a2 > a1:
+'''
+script que infroma se é possivel formar um triangulo e que tipo de triangulo
+'''
+angulo = []
+
+for c in range(1,4):
+    angulo.append(float(input(f'{c}° angulo: ')))
+
+a = angulo[0]
+b = angulo[1]
+c = angulo[2]
+
+if a + b > c and c + a > b and c + b > a:
     print('PODE FORMAR UM TRIANGULO ',end='')
-    if a1 == a2 == a3:
+    if a == b == c:
         print('EQUILATERO')
-    elif a1 != a2 != a3 != a1:
+    elif a != b != c != a:
         print('ESCALENO')
     else:
         print('ISOCESLES')

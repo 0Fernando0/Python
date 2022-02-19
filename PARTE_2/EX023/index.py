@@ -1,12 +1,11 @@
-while True:   
-    print('''
+while True:
+    opcao = int(input('''    
     [ 1 ] SOMAR
     [ 2 ] MULTIPLICAR
     [ 3 ] MAIOR 
     [ 4 ] NOVOS NÚMERO
     [ 5 ] ENCERRAR PROGRAMA
-    ''')
-    opcao = int(input('Sua Opção: '))
+    Sua Opção: '''))
     if opcao == 1:
         n1 = float(input('Primeiro número: '))
         n2 = float(input('Segundo número: '))

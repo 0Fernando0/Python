@@ -1,6 +1,10 @@
-larg = float(input('Largura Da Parede: '))
-alt = float(input('Altura Da Parede: '))
-area = larg * alt 
+'''
+script para calcular a quantidade de tinta necessaria para pintar uma parede
+'''
+
+largura = float(input('Largura Da Parede: '))
+altura = float(input('Altura Da Parede: '))
+area = largura * altura 
 tinta = area / 2
-print('a parede tem dimensão de {} x {} e sua área de {}m²'.format(larg,alt,area))
-print('para pintar essa parede você vai precisar de {}l de tinta'.format(tinta))
+print(f'a parede tem dimensão de {largura} x {altura} e sua área de {area}m²')
+print(f'para pintar essa parede você vai precisar de {tinta}L de tinta')

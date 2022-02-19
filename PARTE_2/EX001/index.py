@@ -1,9 +1,15 @@
-vcasa = float(input('Qual o Valor da casa? R$'))
+'''
+script de aprovação de financiamento de casa
+'''
+
+valor_casa = float(input('Qual o Valor da casa? R$'))
 salario = float(input('Qual o Seu salario mensal? R$'))
-anos = int(input('Em Quantos Anos você vai pagar? '))
-parsal = ((salario/100) * 30)
-parcelas = vcasa / (anos * 12)
-if parcelas <= parsal:
-    print('APROVADO,por {} Anos você pagara de parcelas de sua casa R${:.2f}'.format(anos,parcelas))
+tempo = int(input('Em Quantos Anos você vai pagar? '))
+
+parcela_salario = ((salario/100) * 30)
+parcela_casa = valor_casa / (tempo * 12)
+
+if parcela_casa <= parcela_salario:
+    print(f'APROVADO,por {tempo} Anos você pagara de parcelas de sua casa R${parcela_casa:.2f}')
 else:
     print('Infelizmente Seu Emprestimo foi Negado!')

@@ -1,6 +1,11 @@
-import datetime
+'''
+script simples para ver que atleta é a pessoa com base na idade
+'''
+
+from datetime import datetime
+
 nasc = int(input('qual o seu ano de nascimento? '))
-atual = datetime.date.today().year
+atual = datetime.now().year
 idade = atual - nasc
 if idade <= 9:
     print('ATLETA MIRIM')

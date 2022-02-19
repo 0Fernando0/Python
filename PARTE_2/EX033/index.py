@@ -1,6 +1,3 @@
-from typing import Reversible
-
-
 contaidade = contamulher = contahomem = 0
 while True:
     print('='*20,'\nCADASTRE UMA PESSOA\n','='*20)

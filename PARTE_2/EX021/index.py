@@ -1,6 +1,7 @@
 while True:
-    print('Qual O Seu Sexo [ M ] [ F ]: ')
-    opcao = str(input('Sua Opção: ')).strip().upper()
+    opcao = str(input('''
+    Qual O Seu Sexo [ M ] [ F ]
+    Sua Opção: ''')).upper()
     if opcao == 'M':
         print('O Seu sexo é Masculino')
         print('Para Sair Digite: exit')
@@ -11,8 +12,10 @@ while True:
         print('PROGRAMA ENCERRADO...')
         break
     else:
-        print('''[ERRO] Valor Invalido
-Por Favor Digite Somente (M) ou (F)
-Para Sair Digite: exit''')   
+        print('''
+        [ERRO] Valor Invalido
+        Por Favor Digite Somente (M) ou (F)
+        Para Sair Digite: exit
+        ''')   
         
     

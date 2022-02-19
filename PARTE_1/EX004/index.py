@@ -1,12 +1,15 @@
-n = input('digite algo: ')
-print('o tipo primitivo desse valor é ',type(n))
-print('se tem espaços? ',n.isspace())
-print('é um números? ',n.isnumeric())
-print('é um alfabetico? ',n.isalpha())
-print('é um alfanumerico? ',n.isalnum())
-print('esta em maiuscula? ',n.isupper())
-print('esta em minuscula? ',n.islower())
-print('esta capitalizada? ',n.istitle())
+'''
+script para detalhar o valor informado
+'''
 
-#n = int(input('digite algo: '))
-#print(type(n))
+valor = input('digite algo: ')
+print(f'''
+o tipo primitivo desse valor é {type(valor)}
+tem espaços? {valor.isspace()}
+é um números? {valor.isnumeric()}
+é um alfabetico? {valor.isalpha()}
+é um alfanumerico? {valor.isalnum()}
+esta em maiuscula? {valor.isupper()}
+esta em minuscula? {valor.islower()}
+esta capitalizada? {valor.istitle()}
+''')

@@ -1,4 +1,8 @@
-num = int(input('digite um número: '))
-n1 = num - 1
-n2 = num + 1
-print('{} é antecessor de {} e {} é sucessor'.format(n1,num,n2))
+'''
+pequeno programa par mostra o sucessor e o antecessor do número
+'''
+
+numero = int(input('digite um número: '))
+antecessor = numero - 1
+sucessor = numero + 1
+print(f'{numero} é antecessor de {antecessor} e {sucessor} é sucessor')

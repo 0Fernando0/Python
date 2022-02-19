@@ -2,7 +2,6 @@ print('='*20)
 print('LISTA DE COMPRAS')
 print('='*20)
 soma = contavalor = cont = 0
-prod = ' '
 while True:
     produto = str(input('Nome Do Produto: '))
     valor = float(input('Preço: R$'))
@@ -12,15 +11,13 @@ while True:
         contavalor += 1
     if cont == 1 or valor < menor:
         menor = valor
-        prod = produto
-    #if valor < menor:
-    #        menor = valor
-    #        prod = produto
-    resposta = str(input('Deseja Continuar? [S/N] ')).strip().upper()
+        barato = produto
+    resposta = str(input('Deseja Continuar? [S/N] ')).upper()
     if resposta == 'S':
-        reversed
+        continue
     elif resposta == 'N':
         print(f'O Total da Compra Foi R${soma:.2f}')
-        print(f'{contavalor} Produtos Custaram Mais de R$1000')
-        print(f'o Produto mais barato foi {prod}  que custa R${menor:.2f}')
+        if contavalor:
+            print(f'{contavalor} Produtos Custaram Mais de R$1000')
+        print(f'o Produto mais barato foi {barato}  que custa R${menor:.2f}')
         break

@@ -1,5 +1,9 @@
-peso = float(input('Quanto Você Pesa? (Kg)'))
-altura = float(input('Qual A Sua Altura? (m)'))
+'''
+script para ver o imc da pessoa e verificar se ela está com peso adequado
+'''
+
+peso = float(input('Quanto Você Pesa? (Kg) '))
+altura = float(input('Qual A Sua Altura? (m) '))
 imc = peso / (pow(altura,2))
 print('seu imc é {:.1f}'.format(imc))
 if imc < 18.5:
