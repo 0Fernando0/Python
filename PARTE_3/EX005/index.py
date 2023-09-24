@@ -1,5 +1,0 @@
-print('='*50)
-print('LISTA DE PREÇOS')
-print('='*50)
-lista = ('Lapis','.'*40,'R$ 1.75\n','Borracha')
-print(lista)
